@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CeMarksActivity">
+
+    <EditText
+        android:id="@+id/ce_rollno"
+        android:hint="Enter rollno"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/ce_classtest"
+        android:inputType="number"
+        android:layout_below="@id/ce_rollno"
+        android:hint="Enter class test marks"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/ce_sessional"
+        android:inputType="number"
+        android:layout_below="@id/ce_classtest"
+        android:hint="Enter sessional marks"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/ce_assignment"
+        android:inputType="number"
+        android:layout_below="@id/ce_sessional"
+        android:hint="Enter assignment marks"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/submit_ce_marks"
+        android:layout_below="@id/ce_assignment"
+        android:layout_marginLeft="80dp"
+        android:text="Submit"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/show_marks"
+        android:text="Show marks"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@id/ce_assignment"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/submit_ce_marks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/previous_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="40dp"
+        android:text="previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
